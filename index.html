@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="All_Flowers/Hibiscus.png" type="image/x-icon">
+    <title>Beautiful Birthday</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+
+    <style>
+        .blinking-dot {
+            animation: blink 1s steps(1, end) infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slow-bounce {
+        0%, 100% {
+            transform: translateY(0);
+            }
+        50% {
+            transform: translateY(-25%);
+            }
+        }
+
+        .slow-bounce {
+            animation: slow-bounce 2s infinite;
+        }
+
+        /* Flip Card CSS */
+        .flip-card {
+            perspective: 1000px;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* Maintain aspect ratio */
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .flip-card-flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 0.5rem; /* Adds the rounded corner */
+            top: 0;
+            left: 0;
+        }
+
+        .flip-card-front {
+            background-color: #fff;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #590232;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .flip-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(180deg, #f472b6, #fca5a5); /* Pink to Light Red */
+        }
+
+        .gradient-bg2 {
+            background: linear-gradient(180deg, #fca5a5, #f472b6); /* Pink to Light Red */
+        }
+    </style>
+</head>
+
+<body class="flex flex-col ">
+    
+    <section class="flex flex-col h-screen justify-center items-center text-center bg-pink-400">
+        <div class="flex flex-col gap-y-4">
+            <h1 class="text-2xl">To My Special Girl..<span class="blinking-dot">.</span></h1>
+            <h2 class="text-xl">I wish you all the best <br>for your birthday.</h2>
+            <h2 class="">I hope it's gonna be a great year for you, <br>full of only the best experiences.</h2>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 absolute bottom-8 animate-bounce hover:cursor-pointer" onclick="scrollToGallery()">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+        </svg>
+
+    </section>
+
+    <section id="pics" class="gradient-bg grid gap-y-2 md:gap-4 grid-cols-1 md:grid-cols-4 place-items-center md:place-items-stretch py-2">
+        <!-- Flip Card Example -->
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2619.JPEG" alt="Image 1">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your eyes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2490.JPEG" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2620.JPEG" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're all my favorite songs trapped in a personality</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2915.JPEG" alt="Image 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2710.JPEG" alt="Image 5">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your laughter</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2702.JPEG" alt="Image 6" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2722.JPEG" alt="Image 7">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I like the way you make me feel even when you're nowhere near</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2797.JPEG" alt="Image 8" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2821.JPEG" alt="Image 9">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your smile</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2844.JPEG" alt="Image 10" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2848.JPEG" alt="Image 11">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You have a sweet soul</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2852.JPEG" alt="Image 12" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2862.JPEG" alt="Image 13">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your love</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2891.JPEG" alt="Image 14" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2918.JPEG" alt="Image 15">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">For me, there is only you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2919.JPEG" alt="Image 16" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2926.JPEG" alt="Image 17">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your hair</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2947.JPEG" alt="Image 18" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2968.JPEG" alt="Image 19">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I close my eyes to see you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2949.JPEG" alt="Image 20" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2971.JPEG" alt="Image 21">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your opinions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2981.JPEG" alt="Image 22" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2976.JPEG" alt="Image 23">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're my favorite person</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2977.JPEG" alt="Image 24" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_2990.JPEG" alt="Image 25">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your scent</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_2977.JPEG" alt="Image 26" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3004.JPEG" alt="Image 27">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Loving you is easy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3005.JPEG" alt="Image 28" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3006.JPEG" alt="Image 29">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your hug</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3020.JPEG" alt="Image 30" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3025.JPEG" alt="Image 31">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You make me the luckiest person ever</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3028.JPEG" alt="Image 32" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3032.JPEG" alt="Image 33">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your humor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3042.JPEG" alt="Image 34" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3078.JPEG" alt="Image 35">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're all I need</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3079.JPEG" alt="Image 36" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3080.JPEG" alt="Image 37">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your style</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3089.JPEG" alt="Image 38" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3096.JPEG" alt="Image 39">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">A soul like yours is worth loving</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3101.JPEG" alt="Image 40" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3106.JPEG" alt="Image 41">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your voice</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3113.JPEG" alt="Image 42" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3124.JPEG" alt="Image 43">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're my everything</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3126.JPEG" alt="Image 44" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3138.JPEG" alt="Image 45">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your warmth</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3146.JPEG" alt="Image 46" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3157.JPEG" alt="Image 47">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your name is my favorite word</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3158.JPEG" alt="Image 48" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3161.JPEG" alt="Image 49">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your personality</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3162.JPEG" alt="Image 50" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3159.JPEG" alt="Image 51">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Distance means nothing when the person means everything</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3160.JPEG" alt="Image 52" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3159.JPEG" alt="Image 53">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your intelligence</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3161.JPEG" alt="Image 54" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3162.JPEG" alt="Image 55">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're the best gift</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3163.JPEG" alt="Image 56" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3164.JPEG" alt="Image 57">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your energy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3165.JPEG" alt="Image 58" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3166.JPEG" alt="Image 59">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I love talking to you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3167.JPEG" alt="Image 60" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3182.JPEG" alt="Image 61">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're the prettiest</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3189.JPEG" alt="Image 62" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3203.JPEG" alt="Image 63">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I smile more because of you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3255.JPEG" alt="Image 64" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3307.JPEG" alt="Image 65">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're special to me</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3501.JPEG" alt="Image 66" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3502.JPEG" alt="Image 67">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're my favorite reason to lose sleep</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3503.JPEG" alt="Image 68" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3504.JPEG" alt="Image 69">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">All I want to be is where you are</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3505.JPEG" alt="Image 70" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3506.JPEG" alt="Image 71">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Distance won't change my love for you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3507.JPEG" alt="Image 72" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3508.JPEG" alt="Image 73">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You may not be in front of me, but you're all I see</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3509.JPEG" alt="Image 74" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3510.JPEG" alt="Image 75">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're lovely</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3512.JPEG" alt="Image 76" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3513.JPEG" alt="Image 77">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're my favorite thing to dream about</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3516.JPEG" alt="Image 78" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3522.JPEG" alt="Image 79">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Winning life cause I have you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3578.JPEG" alt="Image 80" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3579.JPEG" alt="Image 81">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your nails</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3580.JPEG" alt="Image 82" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3636.JPEG" alt="Image 83">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Every time I look in your eyes, I look away mesmerized</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3648.JPEG" alt="Image 84" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3649.JPEG" alt="Image 85">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your eyebrows</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3675.JPEG" alt="Image 86" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3678.JPEG" alt="Image 87">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I love being in love with you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3679.JPEG" alt="Image 88" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3720.JPEG" alt="Image 89">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're something I look forward to every day</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3722.JPEG" alt="Image 90" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3724.JPEG" alt="Image 91">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Happiness has 9 letters but mine has 6</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3725.JPEG" alt="Image 92" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3817.JPEG" alt="Image 93">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're the reason I wake up smiling</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3818.JPEG" alt="Image 94" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3825.JPEG" alt="Image 95">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Thank you for being you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3863.JPEG" alt="Image 96" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3906.JPEG" alt="Image 97">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">How lucky I am to have something that makes saying goodbye so hard</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3907.JPEG" alt="Image 98" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3908.JPEG" alt="Image 99">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I never want to stop making memories with you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3919.JPEG" alt="Image 100" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3920.JPEG" alt="Image 101">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">My heart finds its home in your laughs</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3921.JPEG" alt="Image 101" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3966.JPEG" alt="Image 102">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">To be loved by you is an honor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_3978.JPEG" alt="Image 103" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_3981.JPEG" alt="Image 104">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Nothing is impossible if it's for you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4055.JPEG" alt="Image 105" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4058.JPEG" alt="Image 106">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I'll love you on your hardest days</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4089.JPEG" alt="Image 107" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4092.JPEG" alt="Image 108">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You stole my heart, but I'll let you keep it</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4091.JPEG" alt="Image 109" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4093.JPEG" alt="Image 110">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Anything I do, I think about you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4094.JPEG" alt="Image 111" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4095.JPEG" alt="Image 112">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I built you a home in my heart</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4097.JPEG" alt="Image 113" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4098.JPEG" alt="Image 114">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You're my everything</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4100.JPEG" alt="Image 115" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4101.JPEG" alt="Image 116">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">For you I'm infinite</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4102.JPEG" alt="Image 117" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4103.JPEG" alt="Image 118">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">When I'm with you my heart rests</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4104.JPEG" alt="Image 119" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4105.JPEG" alt="Image 120">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">With a heart like that, you deserve the world</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4106.JPEG" alt="Image 121" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4107.JPEG" alt="Image 122">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I see you in all my favorite songs</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4108.JPEG" alt="Image 123" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4109.JPEG" alt="Image 124">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">No words can fully describe all the feelings I have for you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4110.JPEG" alt="Image 125" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4111.JPEG" alt="Image 126">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You make me smile so easily</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4112.JPEG" alt="Image 127" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4113.JPEG" alt="Image 128">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">The world seems kinder with you by my side</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4114.JPEG" alt="Image 129" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4117.JPEG" alt="Image 130">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">May the wind carry my love to you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4119.JPEG" alt="Image 131" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4120.JPEG" alt="Image 132">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I'd rather hear your silence over anyone else's voice</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4121.JPEG" alt="Image 133" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4122.JPEG" alt="Image 134">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You are a blessing in my life</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4123.JPEG" alt="Image 135" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4124.JPEG" alt="Image 136">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Every time I talk to you my day gets better</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4125.JPEG" alt="Image 137" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4126.JPEG" alt="Image 138">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">When I think about love, I think about you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4127.JPEG" alt="Image 139" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4128.JPEG" alt="Image 140">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Everyday is a day closer to the future we have planned together</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4130.JPEG" alt="Image 141" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4133.JPEG" alt="Image 142">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">If I have to go all over the world for you, <br>I will do it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4132.JPEG" alt="Image 143" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4134.JPEG" alt="Image 144">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I will choose you in every lifetime</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4135.JPEG" alt="Image 145" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4137.JPEG" alt="Image 146">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Everything is so much softer and so much sweeter with you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4200.JPEG" alt="Image 147" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4260.JPEG" alt="Image 148">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I'm so glad I found you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4261.JPEG" alt="Image 149" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4262.JPEG" alt="Image 150">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Your laugh makes my heart melt</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4263.JPEG" alt="Image 151" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4291.JPEG" alt="Image 152">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">There's not a single second where I do not wish to be by your side</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4292.JPEG" alt="Image 153" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4293.JPEG" alt="Image 154">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I will never get tired of loving you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4294.JPEG" alt="Image 155" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4295.JPEG" alt="Image 156">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">Seeing you happy means the world to me</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4349.JPEG" alt="Image 157" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4352.JPEG" alt="Image 158">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">You are every lovely word I could think of</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4351.JPEG" alt="Image 159" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4366.JPEG" alt="Image 160">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">There is so much to love about you</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4365.JPEG" alt="Image 161" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/IMG_4453.JPEG" alt="Image 162">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">All you are is all I'll ever need</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/P6300214.JPG" alt="Image 163" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="All_Flowers/P6300215.JPG" alt="Image 164">
+                </div>
+                <div class="flip-card-back">
+                    <p class="text-2xl">I love you with my whole heart</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 row-span-1 p-3">
+            <img src="All_Flowers/IMG_4569.JPEG" alt="Image 165" class="w-full h-full object-cover rounded-lg">
+        </div>
+        
+        <!-- Other images -->
+    </section>
+
+    <section class="gradient-bg2 flex flex-col justify-center items-center text-xl py-2 bg-pink-400">
+        <p>Dear Sophia,</p>
+        <br>
+        <p>From the bottom of my heart</p>
+        <p>I wish you all the best</p>
+        <p>on your special day.</p>
+        <br>
+        <p>You deserve all the good things</p>
+        <p>coming to you.</p>
+        <br>
+        <p>I'm looking forward</p>
+        <p>to your next birthdays</p>
+        <p>and all the memories</p>
+        <p>we are yet to make.</p>
+        <br>
+        <p>May these flowers</p>
+        <p>be a constant reminder</p>
+        <p>of my love for you.</p>
+        <br>
+        <br>
+        <p style="font-family: 'Pacifico', cursive;">With Love, your Alexander</p>
+    </section>
+
+    <script>
+        function toggleFlip(card) {
+            card.classList.toggle('flip-card-flipped');
+        }
+
+        function scrollToGallery() {
+            document.getElementById('pics').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+
+</body>
+</html>

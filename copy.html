@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/hibiscus.png" type="image/x-icon">
+    <title>Beautiful Birthday</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+
+    <style>
+        .blinking-dot {
+            animation: blink 1s steps(1, end) infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slow-bounce {
+        0%, 100% {
+            transform: translateY(0);
+            }
+        50% {
+            transform: translateY(-25%);
+            }
+        }
+
+        .slow-bounce {
+            animation: slow-bounce 2s infinite;
+        }
+
+        /* Flip Card CSS */
+        .flip-card {
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .flip-card-flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 0.5rem; /* Adds the rounded corner */
+        }
+
+        .flip-card-front {
+            background-color: #fff;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #590232;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col ">
+    
+    <section class="flex flex-col h-screen justify-center items-center text-center bg-pink-400">
+        <div class="flex flex-col gap-y-4">
+            <h1 class="text-2xl">To My Special Girl..<span class="blinking-dot">.</span></h1>
+            <h2 class="text-xl">I wish you all the best <br>for your birthday.</h2>
+            <h2 class="">I hope it's gonna be a great year for you, <br>full of blessings.</h2>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 absolute bottom-8 animate-bounce hover:cursor-pointer" onclick="scrollToGallery()">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+        </svg>
+
+    </section>
+
+    <section id="pics" class="grid gap-y-2 md:gap-4 grid-cols-1 md:grid-cols-4 place-items-center md:place-items-stretch my-2"">
+        <!-- Flip Card Example -->
+        <div class="col-span-1 row-span-1 flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/3.webp" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="flip-card-back">
+                    <p>Your eyes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/2.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/3.webp" alt="Image 3" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-2">
+            <img src="images/4.jpg" alt="Image 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-2 row-span-1">
+            <img src="images/5.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/6.jpg" alt="Image 6" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/7.jpg" alt="Image 7" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-2 row-span-2">
+            <img src="images/1.jpg" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/2.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/3.webp" alt="Image 3" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-2">
+            <img src="images/4.jpg" alt="Image 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-2 row-span-1">
+            <img src="images/5.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/6.jpg" alt="Image 6" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/7.jpg" alt="Image 7" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-2 row-span-2">
+            <img src="images/1.jpg" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/2.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/3.webp" alt="Image 3" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-2">
+            <img src="images/4.jpg" alt="Image 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-2 row-span-1">
+            <img src="images/5.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/6.jpg" alt="Image 6" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1 row-span-1">
+            <img src="images/7.jpg" alt="Image 7" class="w-full h-full object-cover rounded-lg">
+        </div>
+        
+    </section>
+
+    <script>
+        function toggleFlip(card) {
+            card.classList.toggle('flip-card-flipped');
+        }
+
+        function scrollToGallery() {
+            document.getElementById('pics').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
